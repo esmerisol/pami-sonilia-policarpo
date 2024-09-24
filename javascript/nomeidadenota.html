@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        var nome = prompt("Digite seu nome: ")  
+        var idade = Number.parsetInt(window.prompt ("Digite sua idade  : "))
+        var nota1 = Number.parsetFloat(window.prompt ("Digite sua primeira nota  : "))
+        var nota2 = Number.parseFloat(window.prompt ("Digite sua segunda nota  : "))
+        var media = (nota1 + nota2) / 2
+
+        if (media >= 6){
+
+            window.alert("Aprovado")
+        }
+        else if(media < 6){
+
+            window.alert("Reprovado")
+            
+        }
+        else if(idade >= 18){
+
+            window.alert("Maior de idade")
+
+        }
+        else{
+             
+            window.alert("Menor de idade")
+        }
+        
+
+            
+
+
+
+
+    </script>
+
+
+
+</body>
+</html>
