@@ -9,29 +9,29 @@
     
     <script>
 
-        var nome = prompt("Digite seu nome: ")  
-        var idade = Number.parsetInt(window.prompt ("Digite sua idade  : "))
-        var nota1 = Number.parsetFloat(window.prompt ("Digite sua primeira nota  : "))
-        var nota2 = Number.parseFloat(window.prompt ("Digite sua segunda nota  : "))
+        var nome = window.prompt("Digite seu nome: ")  
+        var idade = window.prompt ("Digite sua idade  : ")
+        var nota1 = window.prompt ("Digite sua primeira nota  : ")
+        var nota2 = window.prompt ("Digite sua segunda nota  : ")
         var media = (nota1 + nota2) / 2
 
-        if (media >= 6){
+        if(media <= 6){
 
-            window.alert("Aprovado")
+            window.alert( nome + " você está aprovado(a)")
         }
-        else if(media < 6){
+        else{
 
-            window.alert("Reprovado")
+            window.alert(nome + " você está reprovado(a)")
             
         }
-        else if(idade >= 18){
+        if(idade <= 18){
 
-            window.alert("Maior de idade")
+            window.alert(nome + ", você é maior de idade ," + idade)
 
         }
         else{
              
-            window.alert("Menor de idade")
+            window.alert(nome + ", você é menor de idade ," + idade)
         }
         
 
